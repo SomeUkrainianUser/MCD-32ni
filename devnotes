@@ -1,0 +1,2 @@
+flags in descending order from most to least significant bit:
+IC(interrupt), CF(carry), ZF(zero), SF(sign)
