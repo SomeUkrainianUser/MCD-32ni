@@ -1,2 +1,37 @@
 flags in descending order from most to least significant bit:
 IC(interrupt), CF(carry), ZF(zero), SF(sign)
+Instruction opcodes:
+
+ALU
+
+00000 - nop
+00001 - AND
+00010 - OR
+00011 - NAND
+00100 - NOR
+00101 - NOT
+00110 - XOR
+00111 - XNOR
+01000 - nop
+01001 - ADD
+01010 - SUB
+01011 - MUL
+01100 - DIV
+01101 - NEG
+01110 - SHL
+01111 - SHR
+
+NON-ALU
+
+10000 - LDI
+10001 - IN
+10010 - OUT
+10011 - JMP
+10100 - CLI
+10101 - ENI
+
+map:
+bits 0-4 - opcode
+bits 5-8 - src
+bits 9-12 - dest
+bits 13-15 - condition mask
